@@ -1,0 +1,21 @@
+GROCERY INVENTORY MANAGEMENT SYSTEM — QUICK START
+
+1. Install Node.js LTS and MongoDB Community Server.
+2. Make sure MongoDB is running.
+3. Open the extracted project folder in VS Code.
+4. Backend terminal:
+   cd server
+   npm install
+   npm run dev
+5. Keep the backend terminal running. Expected: MongoDB connected successfully; Server running on port 5000.
+6. Open a second terminal:
+   cd client
+   npm install
+   npm run dev
+7. Open the Vite URL, usually http://localhost:5173.
+8. Click Add a product and enter a product name, unique SKU, category, price, quantity, and reorder level.
+9. Test search, category filter, edit, delete, and low-stock status.
+
+Default MongoDB URI: mongodb://127.0.0.1:27017/groceryInventoryDB
+If using MongoDB Atlas, replace MONGO_URI in server/.env with your Atlas connection string.
+Do not share your database password.
