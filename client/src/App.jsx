@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { Boxes, ChartNoAxesCombined, CircleAlert, LayoutDashboard, Leaf, Package, Pencil, Plus, RefreshCw, Search, Trash2, TrendingUp, X } from "lucide-react";
 
-const API = "http://localhost:5000/api/products";
+const API = import.meta.env.VITE_API_URL + "/api/products";
 const categories = ["Fruits & Vegetables", "Dairy", "Bakery", "Beverages", "Snacks", "Staples", "Household", "Other"];
 const blank = { name: "", category: "Fruits & Vegetables", sku: "", price: "", quantity: "", reorderLevel: "5", supplier: "" };
 const money = (value) => new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 2 }).format(value || 0);
