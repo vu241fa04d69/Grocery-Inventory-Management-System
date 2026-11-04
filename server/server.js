@@ -6,7 +6,7 @@ require("dotenv").config();
 const productRoutes = require("./routes/productRoutes");
 const app = express();
 
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "https://grocery-inventory-management-system-one.vercel.app/" }));
 app.use(express.json());
 
 app.get("/", (req, res) => {
